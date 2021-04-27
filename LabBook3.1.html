@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <script>
+        var d = new Date();
+        var hr = d.getHours();
+        var msg;
+        if (hr < 10) {
+            msg = "Good Morning";
+        } else if (hr <= 17) {
+            msg = "Good Afternoon";
+        } else {
+            msg = "Good Evening";
+        }
+            document.write(d+'<br>');
+            document.write(msg);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var headVar = 10;
+        document.write('<p>Script embedded in Head Tag</p>');
+        document.write('<p>-----------------------------------------------</p>')
+        document.write('<p>Value stored in variable headVar is <b>'+headVar+'</b></p>');
+    </script>
+    <hr>
+</head>
+<body>
+    <script>
+        var bodyVar = 65;
+        document.write('<p>Script embedded in Body Tag</p>');
+        document.write('<p>-----------------------------------------------</p>')
+        document.write('<p>Value stored in variable bodyVar is <b>'+bodyVar+'</b></p>');
+    </script>
+    <hr>
+    <script src="my-script2.js">
+    </script>
+    <script>
+        addNos(headVar, bodyVar);
+    </script>
+    <hr>
+</body>
+</html>

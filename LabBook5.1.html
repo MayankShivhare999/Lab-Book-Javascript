@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, td {
+            border: 1px solid blue;
+            text-align: center;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-spacing: 10px;
+        }
+    </style>
+    <script>
+        var w = document.getElementById('w');
+        var h = document.getElementById('h');
+        var l = document.getElementById('l');
+        var t = document.getElementById('t');
+        function nwindow() {
+            window.open(this.href="LabBook1.1.html", 'targetWindow',`top=${t}, left=${l},width=${w},height=${h}`);
+        }
+    </script>
+</head>
+
+<body>
+    <form>
+        <table>
+                <tr>
+                    <td colspan="4"><b>Create a new window</b></td>
+                </tr>
+                <tr>
+                    <td colspan="4">Window Size</td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Widht:</label>
+                    </td>
+                    <td>
+                        <input id="w" type="number">
+                    </td>
+                    <td>
+                        <label>Height:</label>
+                    </td>
+                    <td>
+                        <input id="h" type="number">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4">POSITION</td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Left:</label>
+                    </td>
+                    <td>
+                        <input id="l" type="number">
+                    </td>
+                    <td>
+                        <label>Top:</label>
+                    </td>
+                    <td>
+                        <input id="t" type="number">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <button onclick="nwindow()">New Window</button>
+                    </td>
+                    <td>
+                        <button type="reset">Reset</button>
+                    </td>
+                </tr>
+            
+        </table>
+    </form>
+</body>
+
+</html>
